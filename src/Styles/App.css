@@ -8,10 +8,12 @@ input {
   font-size: 16px;
   padding: .3rem;
 }
-a{
+
+a {
   color: black;
 }
-h6{
+
+h6 {
   color: grey;
 }
 
@@ -26,6 +28,7 @@ body {
   width: 100%;
   backdrop-filter: blur(4px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -42,7 +45,8 @@ body {
   justify-content: center;
   align-items: center;
   width: 50%;
-  div{
+
+  div {
     width: 100%;
     text-align: left;
   }
@@ -55,7 +59,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 14rem;
-    
+
     input {
       width: 100%;
       height: 2rem;
@@ -65,13 +69,13 @@ body {
     }
   }
 
-  .crearCuenta{
+  .crearCuenta {
     width: 100%;
     display: flex;
     justify-content: right;
   }
 
-  button{
+  button {
     padding: 1rem;
     border-radius: 5px;
     width: auto;
@@ -83,7 +87,7 @@ body {
     outline: none;
   }
 
-  .steps{
+  .steps {
     display: flex;
     width: 100%;
     gap: 2rem;
@@ -91,21 +95,125 @@ body {
     position: absolute;
     top: 3rem;
 
-    .icon{
+    .icon {
       font-size: larger;
       color: grey;
     }
-    .done{
+
+    .done {
       color: green;
     }
-    .onit{
+
+    .onit {
       color: black;
-      
+
     }
   }
-  .infoPsw{
+
+  .infoPsw {
     width: 100%;
   }
 
+  .msg {
+    height: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    text-align: center;
+    font-size: small;
+  }
 
+
+}
+
+.top {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+
+  input {
+    width: 20rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.226);
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.707);
+  }
+
+  button {
+    background-color: #3493fe;
+    box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.226);
+    color: white;
+    padding: .7rem;
+    border-radius: 10rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .buTop {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+
+    .perfil {
+      width: 2.2rem;
+      height: 2.2rem;
+      padding: 0;
+      border-radius: 10rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10rem;
+      }
+    }
+
+    .icono {
+      font-size: 1rem;
+    }
+
+    .sunMoon {
+      display: flex;
+      background-color: white;
+      border-radius: 20px;
+      align-items: center;
+      justify-content: center;
+      width: 4.5rem;
+      box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.226);
+
+      .sun{
+        cursor: pointer;
+      }
+      .moon{
+        cursor: pointer;
+      }
+
+
+      .ON {
+        border-radius: 10rem;
+        box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.226);
+        padding: .5rem;
+        color: rgb(234, 203, 2);
+      }
+    }
+  }
+
+
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  /* padding: 8rem 4rem; */
+  height: 100%;
+  gap: 1.5rem;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }

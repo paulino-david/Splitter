@@ -1,5 +1,30 @@
-@media only screen and (min-width:1080px){
-    .formulario{
+@media only screen and (min-width:1080px) {
+    .formulario {
         width: 20%;
+    }
+
+    .dashboard {
+        display: flex;
+        flex-direction: row;
+        /* padding: 8rem 4rem; */
+        height: 85%;
+        gap: 1.5rem;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        .left{
+            width: 70%;
+            
+        }
+        .right{
+            width: 30%;
+        }
+    }
+    .partes{
+        background-color: rgba(255, 255, 255, 0.502);
+        box-shadow: -1px 2px 5px rgba(0, 0, 0, 0.226);
+        height:90%;
+        border-radius: 10px;
     }
 }
